@@ -79,3 +79,39 @@ submitBtn.forEach((button) => {
 		}
 	});
 });
+
+// Cities and Municipalities Logic
+fetch(
+	"/assets/philippine_provinces_cities_municipalities_and_barangays_2019v2.json"
+)
+	.then((response) => response.json())
+	.then((json) => {
+		const provinceSelect = document.getElementById("province-select");
+		const municipalitySelect = document.getElementById("municipality-select");
+		const provinces = {};
+		Object.values(json).forEach((region) => {
+			const provinceList = region.province_list;
+			Object.keys(provinceList).forEach((province) => {
+				provinces[province] = Object.keys(
+					provinceList[province].municipality_list
+				);
+				const option = document.createElement("option");
+				option.value = province;
+				option.textContent = province;
+				provinceSelect.appendChild(option);
+			});
+		});
+
+		provinceSelect.addEventListener("change", () => {
+			municipalitySelect.innerHTML = "";
+			const selectedProvince = provinceSelect.value;
+			const municipalities = provinces[selectedProvince];
+			municipalities.forEach((municipality) => {
+				const option = document.createElement("option");
+				option.value = municipality;
+				option.textContent = municipality;
+				municipalitySelect.appendChild(option);
+			});
+		});
+	});
+

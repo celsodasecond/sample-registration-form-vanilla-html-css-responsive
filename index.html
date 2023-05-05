@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/assets/rider-icon.ico">
 
 		<!----======== CSS ======== -->
 		<link rel="stylesheet" href="style.css" />
@@ -166,12 +167,16 @@
 
 							<div class="input-field">
 								<label>Province</label>
-								<input type="text" placeholder="Enter your province" required />
+								<select id="province-select" required>
+									<option disabled selected>Select Province</option>
+								</select>
 							</div>
 
 							<div class="input-field">
-								<label>City/Town</label>
-								<input type="text" placeholder="Enter your city/town" required />
+								<label>City/Municipality</label>
+								<select id="municipality-select" required>
+									<option disabled selected>Select Province First</option>
+								</select>
 							</div>
 
 							<div class="input-field">
