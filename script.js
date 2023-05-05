@@ -7,7 +7,7 @@ const form = document.querySelector("form"),
 // Page Navigation Logic
 nextBtn.addEventListener("click", ()=> {
     allInput.forEach(input => {
-        if(input.value != ""){
+        if(!input.value != ""){
             form.classList.add('secActive');
         }else{
             form.classList.remove('secActive');
@@ -66,3 +66,16 @@ function formatPhoneNumber(e) {
     this.value = output;
   }
 }
+
+// Submit Alert Logic
+const submitBtn = document.querySelectorAll(".submit")
+
+submitBtn.forEach((button) => {
+	button.addEventListener("click", (event) => {
+		event.preventDefault();
+		if (confirm("Are you sure you want to submit the form?")) {
+			// Submit the form
+			button.closest("form").submit();
+		}
+	});
+});

@@ -33,12 +33,12 @@
 						<div class="fields">
 							<div class="input-field">
 								<label>First Name</label>
-								<input type="text" placeholder="Enter your name" required />
+								<input type="text" placeholder="Enter your first name" required />
 							</div>
 
 							<div class="input-field">
 								<label>Last Name</label>
-								<input type="text" placeholder="Enter your name" required />
+								<input type="text" placeholder="Enter your last name" required />
 							</div>
 
 							<div class="input-field">
@@ -48,7 +48,7 @@
 
 							<div class="input-field">
 								<label>Email</label>
-								<input type="text" placeholder="Enter your email" required />
+								<input type="email" placeholder="Enter your email" required />
 							</div>
 
 							<div class="input-field">
@@ -78,25 +78,34 @@
 						<div class="fields">
 							<div class="input-field">
 								<label>ID Type</label>
-								<input type="text" placeholder="Enter ID type" required />
+								<select required>
+									<option disabled selected>Select Id Type</option>
+                                    <option>e-Card / UMID</option>
+                                    <option>Employee’s ID / Office Id</option>
+                                    <option>Driver’s License</option>
+                                    <option>Passport</option>
+                                    <option>SSS ID</option>
+                                    <option>Voter’s ID</option>
+                                    <option>PhilID / ePhilID</option>
+                                    <option>NBI Clearance</option>
+                                    <option>BIR (TIN)</option>
+                                    <option>Pag-ibig ID</option>
+                                    <option>Solo Parent ID</option>
+                                    <option>Barangay ID</option>
+                                    <option>4Ps ID</option>
+                                    <option>Philippine Postal ID</option>
+                                    <option>Phil-health ID</option>
+								</select>
 							</div>
 
 							<div class="input-field">
 								<label>ID Number</label>
-								<input type="number" placeholder="Enter ID number" required />
-							</div>
-
-							<div class="input-field">
-								<label>Issued Authority</label>
-								<input
-									type="text"
-									placeholder="Enter issued authority"
-									required />
+								<input type="text" placeholder="Enter ID number" required />
 							</div>
 
 							<div class="input-field">
 								<label>Issued At</label>
-								<input type="text" placeholder="Enter issued state" required />
+								<input type="text" placeholder="Enter issued province" required />
 							</div>
 
 							<div class="input-field">
@@ -136,78 +145,61 @@
 						<div class="fields">
 							<div class="input-field">
 								<label>Address Type</label>
+								<select>
+                                    <option>Permanent</option>
+                                    <option>Temporary</option>
+                                </select>
+							</div>
+
+                            <div class="input-field">
+								<label>Block/Zone Number</label>
 								<input
 									type="text"
-									placeholder="Permanent or Temporary"
+									placeholder="Enter block/zone number"
 									required />
 							</div>
 
 							<div class="input-field">
-								<label>Nationality</label>
-								<input type="text" placeholder="Enter nationality" required />
+								<label>Street Address</label>
+								<input type="text" placeholder="Enter street" required />
 							</div>
 
 							<div class="input-field">
-								<label>State</label>
-								<input type="text" placeholder="Enter your state" required />
+								<label>Province</label>
+								<input type="text" placeholder="Enter your province" required />
 							</div>
 
 							<div class="input-field">
-								<label>District</label>
-								<input type="text" placeholder="Enter your district" required />
+								<label>City/Town</label>
+								<input type="text" placeholder="Enter your city/town" required />
 							</div>
 
 							<div class="input-field">
-								<label>Block Number</label>
-								<input
-									type="number"
-									placeholder="Enter block number"
-									required />
-							</div>
-
-							<div class="input-field">
-								<label>Ward Number</label>
-								<input type="number" placeholder="Enter ward number" required />
+								<label>Zip Code</label>
+								<input type="number" placeholder="Enter zip code" required />
 							</div>
 						</div>
 					</div>
 
 					<div class="details family">
-						<span class="title">Family Details</span>
+						<span class="title">Rider Information</span>
 
 						<div class="fields">
 							<div class="input-field">
-								<label>Father Name</label>
-								<input type="text" placeholder="Enter father name" required />
+								<label>Provider</label>
+								<select>
+                                    <option disabled selected>Select Provider</option>
+                                    <option>Angkas</option>
+                                    <option>Lalamove</option>
+                                    <option>MoveIt</option>
+                                </select>
 							</div>
+						</div>
 
-							<div class="input-field">
-								<label>Mother Name</label>
-								<input type="text" placeholder="Enter mother name" required />
-							</div>
-
-							<div class="input-field">
-								<label>Grandfather</label>
-								<input
-									type="text"
-									placeholder="Enter grandfther name"
-									required />
-							</div>
-
-							<div class="input-field">
-								<label>Spouse Name</label>
-								<input type="text" placeholder="Enter spouse name" required />
-							</div>
-
-							<div class="input-field">
-								<label>Father in Law</label>
-								<input type="text" placeholder="Father in law name" required />
-							</div>
-
-							<div class="input-field">
-								<label>Mother in Law</label>
-								<input type="text" placeholder="Mother in law name" required />
-							</div>
+                        <span class="title">Additional Information</span>
+						
+						<div class="">
+							<textarea required id="text-area" name="message" placeholder="message..."></textarea>
 						</div>
 
 						<div class="buttons">
@@ -216,7 +208,7 @@
 								<span class="btnText">Back</span>
 							</div>
 
-							<button class="sumbit">
+							<button class="submit">
 								<span class="btnText">Submit</span>
 								<i class="uil uil-navigator"></i>
 							</button>
