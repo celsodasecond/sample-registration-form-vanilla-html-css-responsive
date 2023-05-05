@@ -22,6 +22,8 @@ body {
 	margin: 0 15px;
 	background-color: #fff;
 	box-shadow: 0 5px 10px rgba(216, 216, 216, 0.1);
+    overflow-y: auto;
+	overflow-x: hidden;
 }
 .container header {
 	position: relative;
@@ -44,8 +46,6 @@ body {
 	margin-top: 16px;
 	min-height: 490px;
 	background-color: #fff;
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 .container form .form {
 	position: absolute;
@@ -264,8 +264,9 @@ form .buttons button,
 }
 
 @media (max-width: 750px) {
-	.container form {
+	.container {
 		overflow-y: scroll;
+        min-height: 90vh;
 	}
 	.container form::-webkit-scrollbar {
 		display: none;
