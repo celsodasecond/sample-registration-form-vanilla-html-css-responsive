@@ -7,7 +7,7 @@ const form = document.querySelector("form"),
 // Page Navigation Logic
 nextBtn.addEventListener("click", ()=> {
     allInput.forEach(input => {
-        if(!input.value != ""){
+        if(input.value != ""){
             form.classList.add('secActive');
         }else{
             form.classList.remove('secActive');

@@ -278,9 +278,6 @@ form .buttons button,
 		overflow-y: scroll;
         min-height: 90vh;
 	}
-	.container form::-webkit-scrollbar {
-		display: none;
-	}
 	form .fields .input-field {
 		width: calc(100% / 2 - 15px);
 	}
