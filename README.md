@@ -9,10 +9,10 @@
 ## Screenshots:
 
 ### Desktop:
-![image](https://github.com/celsodasecond/jake-s-coffee-landing-page-html-css-js-responsive/assets/75917932/f88902a2-3247-4475-b401-03da95fb1a1e)
+![image](https://github.com/celsodasecond/sample-registration-form-vanilla-html-css-responsive/assets/75917932/d41a0588-d493-42b4-a645-62a479797ff4)
 
 ### Mobile:
-![image](https://github.com/celsodasecond/jake-s-coffee-landing-page-html-css-js-responsive/assets/75917932/22583bb0-7082-472a-8add-6940ccfab5db)
+![image](https://github.com/celsodasecond/sample-registration-form-vanilla-html-css-responsive/assets/75917932/82fd50c0-1293-4a8a-b388-0b8193471187)
 
 #### Clone Project
 
